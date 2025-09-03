@@ -6,26 +6,113 @@
     <title>Porshe</title>
 </head>
 <body>
-    <h1>Porshe</h1>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__container">
+                <nav class="header__nav header__nav-left">
+                    <ul class="nav nav__left">
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Акції</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Відгуки</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Доставка</a>
+                        </li>
+                        <li class="nav__item nav__item-dropdown">
+                            <div class="dropdown">
+                                <div class="dropdown__toggle">
+                                    <span class="dropdown__text">Інше</span>
+                                    <span class="dropdown__icon"></span>
+                                </div>
 
-    <h2>Porshe 718</h2>
-    <img src="./images/porsche-718.jpg" alt=porsche-718">
+                                <div class="dropdown__menu">
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__item">
+                                            <a href="" class="dropdown__link">Вакансії</a>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="" class="dropdown__link">Франшиза</a>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="" class="dropdown__link">Оплата</a>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="" class="dropdown__link">Про нас</a>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="" class="dropdown__link">Новини</a>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="" class="dropdown__link">Оферта</a>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="" class="dropdown__link">Для партнерів</a>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a href="" class="dropdown__link">Контакти</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
 
-    <h2>Porshe 911</h2>
-    <img src="./images/porsche-911.jpg" alt="porsche-911">
+                        <li class="nav__item nav__item-dropdown">
+                            <div class="dropdown">
+                                <div class="dropdown__toggle">
+                                    <span class="dropdown__text">Укр</span>
+                                    <span class="dropdown__icon"></span>
+                                </div>
 
-    <script>
-        const headings = document.getElementsByTagName("h2");
+                                <div class="dropdown__menu">
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__item">
+                                            <a href="" class="dropdown__link">Eng</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
 
-        for(let i = 0; i < headings.length; i++) {
-            headings[i].addEventListener("click", () => {
-                headings[i].style.color = "red";
+                <div class="header__logo">
+                    <a href="" class="header__logo-link">
+                        <img src="" alt="" class="header__logo-img">
+                    </a>
+                </div>
 
-                setTimeout(() => {
-                    headings[i].style.color = "black";
-                }, 1000)
-            })
-        }
-    </script>
+                <nav class="header__nav header__nav-right">
+                    <ul class="nav nav__right">
+                        <li class="nav__item">
+                            <a href="" class="nav__link">
+                                <img src="" alt="" class="nav__link-img">
+                                <span class="nav__link-text">
+                                    <span class="nav__link-label">Ваше місто</span>
+                                    <span class="nav__link-label">Львів</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">
+                                <img src="" alt="" class="nav__link-img">
+                                <span class="nav__link-text">
+                                    <span class="nav__link-price">0</span>
+                                    <sup class="nav__link-currency">₴</sup>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">
+                                <img src="" alt="" class="nav__link-img">
+                                <span class="nav__link-text">Вхід</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
