@@ -1,118 +1,16 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porshe</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Decor</title>
+    <link rel="shortcut icon" href="img/global/deco4you-icon.png" type="image/x-icon" />
+    <script src="https://unpkg.com/htmx.org@1.9.10"
+        integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+        crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="header__wrapper">
-            <div class="header__container">
-                <nav class="header__nav header__nav-left">
-                    <ul class="nav nav__left">
-                        <li class="nav__item">
-                            <a href="" class="nav__link">Акції</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="" class="nav__link">Відгуки</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="" class="nav__link">Доставка</a>
-                        </li>
-                        <li class="nav__item nav__item-dropdown">
-                            <div class="dropdown">
-                                <div class="dropdown__toggle">
-                                    <span class="dropdown__text">Інше</span>
-                                    <span class="dropdown__icon"></span>
-                                </div>
-
-                                <div class="dropdown__menu">
-                                    <ul class="dropdown__list">
-                                        <li class="dropdown__item">
-                                            <a href="" class="dropdown__link">Вакансії</a>
-                                        </li>
-                                        <li class="dropdown__item">
-                                            <a href="" class="dropdown__link">Франшиза</a>
-                                        </li>
-                                        <li class="dropdown__item">
-                                            <a href="" class="dropdown__link">Оплата</a>
-                                        </li>
-                                        <li class="dropdown__item">
-                                            <a href="" class="dropdown__link">Про нас</a>
-                                        </li>
-                                        <li class="dropdown__item">
-                                            <a href="" class="dropdown__link">Новини</a>
-                                        </li>
-                                        <li class="dropdown__item">
-                                            <a href="" class="dropdown__link">Оферта</a>
-                                        </li>
-                                        <li class="dropdown__item">
-                                            <a href="" class="dropdown__link">Для партнерів</a>
-                                        </li>
-                                        <li class="dropdown__item">
-                                            <a href="" class="dropdown__link">Контакти</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="nav__item nav__item-dropdown">
-                            <div class="dropdown">
-                                <div class="dropdown__toggle">
-                                    <span class="dropdown__text">Укр</span>
-                                    <span class="dropdown__icon"></span>
-                                </div>
-
-                                <div class="dropdown__menu">
-                                    <ul class="dropdown__list">
-                                        <li class="dropdown__item">
-                                            <a href="" class="dropdown__link">Eng</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-
-                <div class="header__logo">
-                    <a href="" class="header__logo-link">
-                        <img src="" alt="" class="header__logo-img">
-                    </a>
-                </div>
-
-                <nav class="header__nav header__nav-right">
-                    <ul class="nav nav__right">
-                        <li class="nav__item">
-                            <a href="" class="nav__link">
-                                <img src="" alt="" class="nav__link-img">
-                                <span class="nav__link-text">
-                                    <span class="nav__link-label">Ваше місто</span>
-                                    <span class="nav__link-label">Львів</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="" class="nav__link">
-                                <img src="" alt="" class="nav__link-img">
-                                <span class="nav__link-text">
-                                    <span class="nav__link-price">0</span>
-                                    <sup class="nav__link-currency">₴</sup>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="" class="nav__link">
-                                <img src="" alt="" class="nav__link-img">
-                                <span class="nav__link-text">Вхід</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.catalog.partial.html"></section>
 </body>
 </html>
