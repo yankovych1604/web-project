@@ -1,5 +1,6 @@
 function init() {
     import('./index.catalog.js');
+     import('./index.modal-overlay.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
